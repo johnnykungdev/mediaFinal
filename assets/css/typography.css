@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(250, 70, 22);
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5vw;
+    background-color: rgb(250, 70, 22);
+    color: white;
+}
+
+h2 {
+    font-family: 'Courgette', sans-serif;
+    font-size: 4vw;;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    background-color: rgb(250, 70, 22);
+    color: white;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;.
+    font-size: 1.5vw;
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;.
+}
+
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.quotes {
+    font-family: 'Courgette', sans-serif;
+    font-size: 2vw;
+}

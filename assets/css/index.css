@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(250, 70, 22);
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    vertical-align: middle;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.nav-content, .nav-content li{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+#nav-list {
+    text-align: center;
+}
+
+#logo {
+    height: 75px;
+    float: left;
+}
+
+#order-online {
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(250, 70, 22);
+    float: right;
+}
+
+header {
+    position: relative;
+    background-image: url("../images/indexHeader.png");
+    background-size: cover;
+    width: 100%;
+    height: 66.6vw;
+}
+
+#blackdrop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 500;
+    background-color: rgba(65, 64, 64, 0.678);
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 600;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+h4 {
+    font-size: 1.5vw;
+}
+
+.orangeText {
+    color: rgb(250, 70, 22);
+}
+
+.whiteText {
+    color: white;
+}       
+
+#book-table {
+    color: rgb(250, 70, 22);
+    padding:1vw;
+    font-size: 1.2vw;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+}
+
+.aboutAuntFrancis {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 700px;
+}
+
+.imageContainer {
+    position: relative;
+    height: 100%;
+}
+
+#auntFrancisImage {
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.auntFrancisQuote {
+    position: absolute;
+    grid-column-start: 2;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-family: 'Courgette', sans-serif;
+}
