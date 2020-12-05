@@ -58,7 +58,8 @@ nav {
 
 #logo {
     height: 75px;
-    float: left;
+    position: relative;
+    left: 30px;
 }
 
 .orderButtonContainer {
@@ -99,14 +100,42 @@ header {
     height: 500px;
     width: 400px;
     border-radius: 5px;
-    opacity: 0.8
+    padding-top: 20px;
+}
+
+.contactInput {
+    width: 80%;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    padding: 10px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
 }
 
 #emailContent {
     opacity: 1;
     z-index: 1000;
+    resize: none;
+    font-family: 'Work Sans', sans-serif;
+    padding: 10px;
+    width: 80%;
 }
 
+form h2 {
+    font-family: "Roboto", sans-serif;
+    color: rgb(250, 70, 22)
+}
+
+form button {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(250, 70, 22);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 10px;
+}
 
 footer {
     background-color: rgb(49, 30, 16);
@@ -119,8 +148,12 @@ footer {
     color: white;
 }
 
-.footerDescription h3 {
+footer h3 {
     font-family: 'Roboto', sans-serif;
+}
+
+footer p {
+    font-family: 'Work Sans', sans-serif;
 }
 
 .footerDescription p {

@@ -36,7 +36,8 @@ a, a:link, a:visited {
 
 #logo {
     height: 75px;
-    float: left;
+    position: relative;
+    left: 30px;
 }
 
 .orderButtonContainer {
@@ -191,8 +192,12 @@ footer {
     color: white;
 }
 
-.footerDescription h3 {
+footer h3 {
     font-family: 'Roboto', sans-serif;
+}
+
+footer p {
+    font-family: 'Work Sans', sans-serif;
 }
 
 .footerDescription p {
