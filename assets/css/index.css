@@ -122,3 +122,18 @@ h4 {
     transform: translate(0, -50%);
     font-family: 'Courgette', sans-serif;
 }
+
+footer {
+    background-color: rgb(237, 242, 239);
+    height: 300px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#openingHoursList {
+    list-style: none;
+}

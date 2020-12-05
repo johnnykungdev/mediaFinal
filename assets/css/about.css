@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(250, 70, 22);
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    vertical-align: middle;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.nav-content, .nav-content li{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+#nav-list {
+    text-align: center;
+}
+
+#logo {
+    height: 75px;
+    float: left;
+}
+
+#order-online {
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(250, 70, 22);
+    float: right;
+}
+
+footer {
+    background-color: rgb(237, 242, 239);
+    height: 300px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#openingHoursList {
+    list-style: none;
+}
