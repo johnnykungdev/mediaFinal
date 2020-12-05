@@ -4,43 +4,167 @@
         <title>Menu - Aunt Francis</title>
         <link href="./assets/css/menu.css" rel="stylesheet"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&family=Courgette&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <nav>
             <div class="nav-content">
-                <img id="logo" src="./assets/images/logo.png"/>
+                <a href="./index.html">
+                    <img id="logo" src="./assets/images/logo.png"/>
+                </a>
             </div>
             <ul class="nav-content" id="nav-list">
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>MENU</li>
-                <li>TEAM</li>
-                <li>CONTACT</li>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./menu.html">MENU</a></li>
+                <li><a href="./contactUs.html">CONTACT</a></li>
             </ul>
             <button class="nav-content" id="order-online">Order Online</button>
         </nav>
         <header>
-
+            <div id="blackdrop"></div>
+            <div class="header-content">
+                <h1>Menu</h1>
+                <!-- <h3 id="quote">"I only prepare food with the freshest ingredients and serve them with passion"</h3>
+                <h3 id="sign">- Aunt Francis</h3> -->
+                <h3>Our Specialties</h3>
+            </div>
         </header>
-        <section>
-            
+        <section class="menuContent">
+            <h2 class="menuTitle">Homemade Cuisines</h2>
+            <div class="menuList">
+                <div class="menuItem">
+                    <div class="itemImageContainer">
+                        <img id="menuItemImage" src="./assets/images/menu/menu1.jpg"/>
+                    </div>
+                    <div class="menuItemText">
+                        <h4 class="menuItemTitle">Roasted Sandwich</h4>
+                        <hr>
+                        <p class="ingredients">Toast, Tomato, Beef</p>
+                        <p class="price">$9.99</p>
+                    </div>
+                </div>
+                <div class="menuItem">
+                    <div class="itemImageContainer">
+                        <img id="menuItemImage" src="./assets/images/menu/menu2.jpg"/>
+                        </div>
+                    <div class="menuItemText">
+                        <h4 class="menuItemTitle">Homade Cupcake</h4>
+                        <hr>
+                        <p>Berries, Milk, Eggs</p>
+                        <p>$5.99/ea</p>
+                    </div>
+                </div>
+                <div class="menuItem">
+                    <div class="itemImageContainer">
+                        <img id="menuItemImage" src="./assets/images/menu/menu3.jpg"/>
+                        </div>
+                    <div class="menuItemText">
+                        <h4 class="menuItemTitle">French Toast with Coffee Set</h4>
+                        <hr>
+                        <p>Latte, Eggs, Toast</p>
+                        <p>$20</p>
+                    </div>
+                </div>
+                <div class="menuItem">
+                    <div class="itemImageContainer">
+                        <img id="menuItemImage" src="./assets/images/menu/menu4.jpg"/>
+                        </div>
+                    <div class="menuItemText">
+                        <h4 class="menuItemTitle">Skewed Chicken</h4>
+                        <hr>
+                        <p>Chiceken, garlic, homemade sauce</p>
+                        <p>$15 for two</p>
+                    </div>
+                </div>
+                <div class="menuItem">
+                    <div class="itemImageContainer">
+                        <img id="menuItemImage" src="./assets/images/menu/menu5.jpg"/>
+                        </div>
+                    <div class="menuItemText">
+                        <h4 class="menuItemTitle">Roasted Steak</h4>
+                        <hr>
+                        <p>Steak, garlic, parsley</p>
+                        <p>$35.99</p>
+                    </div>
+                </div>
+                <div class="menuItem">
+                    <div class="itemImageContainer">
+                        <img id="menuItemImage" src="./assets/images/menu/menu6.jpg"/>
+                        </div>
+                    <div class="menuItemText">
+                        <h4 class="menuItemTitle">Spanish Paella</h4>
+                        <hr>
+                        <p>Shrimp, tomato, beans, rice</p>
+                        <p>$20.00</p>
+                    </div>
+                </div>
+            </div>
+            <section id="clickViewMore">
+                <button id="moreDishes">More Dishes</button>
+            </section>
+            <h2 class="menuTitle">Special Menus</h2>
+            <div class="menuList">
+                    <div class="menuItem">
+                            <div class="itemImageContainer">
+                                <img id="menuItemImage" src="./assets/images/menu/menu1.jpg"/>
+                            </div>
+                            <div class="menuItemText">
+                                <h4 class="menuItemTitle">Roasted Sandwich</h4>
+                                <hr>
+                                <p class="ingredients">Toast, Tomato, Beef</p>
+                                <p class="price">$9.99</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="itemImageContainer">
+                                <img id="menuItemImage" src="./assets/images/menu/menu2.jpg"/>
+                                </div>
+                            <div class="menuItemText">
+                                <h4 class="menuItemTitle">Homade Cupcake</h4>
+                                <hr>
+                                <p>Berries, Milk, Eggs</p>
+                                <p>$5.99/ea</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="itemImageContainer">
+                                <img id="menuItemImage" src="./assets/images/menu/menu3.jpg"/>
+                                </div>
+                            <div class="menuItemText">
+                                <h4 class="menuItemTitle">French Toast with Coffee Set</h4>
+                                <hr>
+                                <p>Latte, Eggs, Toast</p>
+                                <p>$20</p>
+                            </div>
+                        </div>
+            </div>
         </section>
+
         <footer>
-            <div>
-                <h4>Aunt Francis</h4>
+            <div class="footerDescription">
+                <h3>Aunt Francis</h3>
                 <p>Each homemade meal will impress you with the amount of flavor in every bite. We bet that your taste buds have never tasted anything like this ever before.</p>
             </div>
             <div>
-                <h4>Opening Hours</h4>
+                <h3>Opening Hours</h3>
                 <ul id="openingHoursList">
-                    <li>Weekdays: 1100 - 2100</li>
-                    <li>Weekends: 1200 - 2000</li>
+                    <li><p>Mon:</p> <p>1100 - 2100</p></li>
+                    <li><p>Tue:</p> <p>1100 - 2100</p></li>
+                    <li><p>Wed:</p> <p>1100 - 2100</p></li>
+                    <li><p>Thu:</p> <p>1100 - 2100</p></li>
+                    <li><p>Fri:</p> <p>1100 - 2100</p></li>
+                    <li><p>Sat:</p> <p>1200 - 2000</p></li>
+                    <li><p>Sun:</p> <p>1200 - 2000</p></li>
                 </ul>
             </div>
             <div>
-                <button>Contact Us</button>
-                <button>Subscribe</button>
+                <h3>Contact Us</h3>
+                <p>5555 Francis Ave., Burnaby, BC, Canada</p>
+                <hr>
+                <p>aunt_francis@gmail.com</p>
+                <hr>
+                <p>phone: (+1)123-456-7890</p>
             </div>
         </footer>
     </body>

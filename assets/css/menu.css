@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: "Work Sans", sans-serif;
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+h4 {
+    font-size: 1.5vw;
+}
+
+
+nav {
+    background-color: rgb(250, 70, 22);
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    vertical-align: middle;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    top: 0;
+}
+
+.nav-content, .nav-content li{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+#nav-list {
+    text-align: center;
+}
+
+#logo {
+    height: 75px;
+    float: left;
+}
+
+#order-online {
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(250, 70, 22);
+    float: right;
+}
+
+header {
+    position: relative;
+    background-image: url("../images/menuHeader.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 66.67vw;
+}
+
+#blackdrop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 500;
+    background-color: rgba(65, 64, 64, 0.678);
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 600;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.menuContent {
+    padding-bottom: 50px;
+}
+
+.menuList {
+    display: grid;
+    width: 60%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.menuTitle {
+    font-family: "Courgette", sans-serif;
+    color: rgb(255, 35, 37);
+    width: 60%;
+    margin: 30px auto 30px auto;
+}
+
+.menuItem {
+    border: 1px solid rgb(255, 130, 35);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 6px 7px 6px #CECECE;
+}
+
+.itemImageContainer {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+#menuItemImage {
+    width: 100%;
+}
+
+.menuItemText {
+    box-sizing: border-box;
+    padding: 10px;
+    padding-left: 15px;
+}
+
+.menuItemTitle {
+    font-family: "Courgette", sans-serif;
+}
+
+hr {
+    border: 0.5px solid rgb(237, 242, 239);
+}
+
+#clickViewMore {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#moreDishes {
+    padding: 15px;
+    font-size: 1.3rem;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(250, 70, 22);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(49, 30, 16);
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    padding-left: 20%;
+    padding-right: 20%;
+    color: white;
+}
+
+.footerDescription h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.footerDescription p {
+    line-height: 30px;
+}
+
+#openingHoursList {
+    list-style: none;
+    padding: 0;
+}
+
+#openingHoursList li {
+    font-family: 'Work Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+}
+
+li p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

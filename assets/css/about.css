@@ -3,6 +3,32 @@ body {
     padding: 0;
 }
 
+p {
+    font-family: "Work Sans", sans-serif;
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+h4 {
+    font-size: 1.5vw;
+}
+
+
 nav {
     background-color: rgb(250, 70, 22);
     color: white;
@@ -12,6 +38,7 @@ nav {
     vertical-align: middle;
     display: grid;
     grid-template-columns: 20% 60% 20%;
+    top: 0;
 }
 
 .nav-content, .nav-content li{
@@ -36,17 +63,125 @@ nav {
     float: right;
 }
 
+header {
+    position: relative;
+    background-image: url("../images/aboutHeader.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 66.67vw;
+}
+
+#blackdrop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 500;
+    background-color: rgba(65, 64, 64, 0.678);
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 600;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+#quote {
+    font-family: 'Courgette', sans-serif;
+}
+
+#sign {
+    font-family: 'Courgette', sans-serif;
+    text-align: center;
+}
+
+.about {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.imageContainer {
+    text-align: center;
+}
+
+#youngFrancis {
+    height: 200px;
+    width: 200px;
+    margin-right: 30px;
+    margin-right: 30px;
+}
+
+#dogImage {
+    height: 200px;
+    width: 200px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+#aboutContent {
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.statsList {
+    display: grid;
+    padding-right: 15%;
+    padding-left: 15%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 66px;
+}
+
+.statsListItem {
+    display: inline-block;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+#units {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+}
+
 footer {
-    background-color: rgb(237, 242, 239);
-    height: 300px;
+    background-color: rgb(49, 30, 16);
     display: grid;
     grid-gap: 50px;
     grid-template-columns: 1fr 1fr 1fr;
     box-sizing: border-box;
     padding-left: 20%;
     padding-right: 20%;
+    color: white;
+}
+
+.footerDescription h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.footerDescription p {
+    line-height: 30px;
 }
 
 #openingHoursList {
     list-style: none;
+    padding: 0;
+}
+
+#openingHoursList li {
+    font-family: 'Work Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+}
+
+li p {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

@@ -14,6 +14,11 @@ nav {
     grid-template-columns: 20% 60% 20%;
 }
 
+a, a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
 .nav-content, .nav-content li{
     display: inline-block;
     font-family: 'Roboto', sans-serif;
@@ -124,16 +129,36 @@ h4 {
 }
 
 footer {
-    background-color: rgb(237, 242, 239);
-    height: 300px;
+    background-color: rgb(49, 30, 16);
     display: grid;
     grid-gap: 50px;
     grid-template-columns: 1fr 1fr 1fr;
     box-sizing: border-box;
     padding-left: 20%;
     padding-right: 20%;
+    color: white;
+}
+
+.footerDescription h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.footerDescription p {
+    line-height: 30px;
 }
 
 #openingHoursList {
     list-style: none;
+    padding: 0;
+}
+
+#openingHoursList li {
+    font-family: 'Work Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+}
+
+li p {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
