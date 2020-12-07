@@ -1,0 +1,44 @@
+nav {
+    background-color: rgb(250, 70, 22);
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    vertical-align: middle;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-content, .nav-content li{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+.nav-content li {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#nav-list {
+    text-align: center;
+}
+
+#logo {
+    height: 75px;
+    position: relative;
+    left: 30px;
+}
+
+#order-online {
+    border-style: none;
+    color: white;
+    background-color: rgb(250, 70, 22);
+    float: right;
+    font-size: 30px;
+}

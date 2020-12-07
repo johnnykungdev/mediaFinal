@@ -6,42 +6,40 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&family=Courgette&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="./assets/js/carousel.js"></script>
+        <link rel="icon" type="image/png" href="./assets/images/favicon.png">
     </head>
     <body>
         <nav>
             <div class="nav-content">
                 <a href="./index.html">
-                    <img id="logo" src="./assets/images/logo.png"/>
+                    <img id="logo" src="./assets/images/logo.png" alt="Aunt Francis Logo">
                 </a>
             </div>
             <ul class="nav-content" id="nav-list">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./menu.html">MENU</a></li>
-                <li><a href="./contactUs.html">CONTACT</a></li>
+                <li><a href="./index.html" title="Go back home">HOME</a></li>
+                <li><a href="./about.html" title="Learn more about Aunt Francis">ABOUT</a></li>
+                <li><a href="./menu.html" title="Take a look at our delicious menu">MENU</a></li>
+                <li><a href="./contactUs.html" title="Contact and ask Aunt Francis">CONTACT</a></li>
             </ul>
-            <div class="orderButtonContainer">
-                <button class="nav-content" id="order-online">Order Online</button>
-            </div>
+            <button class="nav-content" id="order-online" title="Order delicious food here.">ORDER ONLINE</button>
         </nav>
-        <header>
+        <header id="background">
             <div id="blackdrop"></div>
             <div class="header-content">
-                <h2 class="orangeText">Welcome to Aunt Francis</h2>
-                <h1 class="whiteText">Come Dine With Us</h1>
-                <hr class="whiteText">
-                <h4 class="whiteText">Opening Hours<br>
+                <h1 class="orangeText">Welcome to</h1>
+                <img id="logoSquare" src="./assets/images/logo2.png" alt="Aunt Francis Logo">
+                <h2 class="whiteText">Come Dine With Family.</h2>
+                <h4 class="whiteText">Dining Hours<br>
                     Weekdays: 1100 - 2100<br>
                     Weekends: 1200 - 2000<br>
                 </h4>
-                <div>
-                </div>
-                <button id="book-table">Book a Table</button>
+                <button id="book-table" title="Dine with us today.">Book a Table</button>
             </div>
         </header>
         <section class="aboutAuntFrancis">
             <div class="imageContainer">
-                <img id="auntFrancisImage" src="/assets/images/aunt.jpeg"/>
+                <img id="auntFrancisImage" src="./assets/images/aunt.jpg" alt="Aunt Francis with sunglasses on a sunny day.">
             </div>
             <div class="auntFrancisQuote">
                 <p>"I only prepare food with the freshest ingredients and serve them with passion"</p>
@@ -53,7 +51,7 @@
             <div class="happyCustomersContent">
                 "Visited as a guest in the Aunt Francis restaurant for lunch just today. We were entertaining friends from California, and enjoyed our ocean side table. We chose to stay indoors - to enjoy the air conditioning 😊. I just want to say that, in addition to a nice meal, we had a delightful waitress, Jackie. She had just the right balance of friendliness and efficiency. She recognized that we wanted time to visit and did not rush us. She and other staff members made certain that we had everything we needed. Kudos!"
             </div>
-            <img src="./assets/images/happyCustomer.png" id="happyCustomerImage"/>
+            <img src="./assets/images/happyCustomer.png" id="happyCustomerImage" alt="A image of a hapy customer."/>
             <div>
                 <div class="rating">
                     <span class="fa fa-star checked"></span>
@@ -65,35 +63,50 @@
             </div>
         </section>
         <section class="foods">
-            <img src="./assets/images/index/menu1.png" id="foodCircleImage">
-            <img src="./assets/images/index/menu6.png" id="foodCircleImage">
-            <img src="./assets/images/index/menu7.png" id="foodCircleImage">
+            <img src="./assets/images/index/menu1.png" id="foodCircleImage" alt="food image 1">
+            <img src="./assets/images/index/menu6.png" id="foodCircleImage" alt="food image 2">
+            <img src="./assets/images/index/menu7.png" id="foodCircleImage" alt="food image 3">
         </section>
+        <aside>
+            <h3>@INSTAGRAM</h3>
+            <div class="instagram">
+                <img src="./assets/images/instagram1.jpg" alt="Food image on Instagram - Foodtruck">
+                <img src="./assets/images/instagram2.jpg" alt="Food image on Instagram - Foodtruck 2">
+                <img src="./assets/images/instagram3.jpg" alt="Food image on Instagram - Pancake">
+                <img src="./assets/images/instagram4.jpg" alt="Food image on Instagram - Cookie">
+                <img src="./assets/images/instagram5.jpg" alt="Food image on Instagram - Ice Cream">
+            </div>
+            <div class="socials">
+                <a href="http://www.facebook.com" title="Go to Aunt Francis' Facebook Page"><img src="./assets/images/facebook.png" alt="Facebook Icon"></a>
+                <a href="http://www.twitter.com" title="Go to Aunt Francis' Twitter Page"><img src="./assets/images/twitter.png" alt="Twitter Icon"></a>
+                <a href="http://www.instagram.com" title="Go to Aunt Francis' Instagram Page"><img src="./assets/images/instagram.png" alt="Instagram Icon"></a>
+            </div>
+        </aside>
         <footer>
-                <div class="footerDescription">
-                    <h3>Aunt Francis</h3>
-                    <p>Each homemade meal will impress you with the amount of flavor in every bite. We bet that your taste buds have never tasted anything like this ever before.</p>
-                </div>
-                <div>
-                    <h3>Opening Hours</h3>
-                    <ul id="openingHoursList">
-                        <li><p>Mon:</p> <p>1100 - 2100</p></li>
-                        <li><p>Tue:</p> <p>1100 - 2100</p></li>
-                        <li><p>Wed:</p> <p>1100 - 2100</p></li>
-                        <li><p>Thu:</p> <p>1100 - 2100</p></li>
-                        <li><p>Fri:</p> <p>1100 - 2100</p></li>
-                        <li><p>Sat:</p> <p>1200 - 2000</p></li>
-                        <li><p>Sun:</p> <p>1200 - 2000</p></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Contact Us</h3>
-                    <p>5555 Francis Ave., Burnaby, BC, Canada</p>
-                    <hr>
-                    <p>aunt_francis@gmail.com</p>
-                    <hr>
-                    <p>phone: (+1)123-456-7890</p>
-                </div>
-            </footer>
+            <div class="footerDescription">
+                <h3>Aunt Francis</h3>
+                <p>Each homemade meal will impress you with the amount of flavor in every bite. We bet that your taste buds have never tasted anything like this ever before.</p>
+            </div>
+            <div>
+                <h3>Opening Hours</h3>
+                <ul id="openingHoursList">
+                    <li><p>Mon:</p> <p>1100 - 2100</p></li>
+                    <li><p>Tue:</p> <p>1100 - 2100</p></li>
+                    <li><p>Wed:</p> <p>1100 - 2100</p></li>
+                    <li><p>Thu:</p> <p>1100 - 2100</p></li>
+                    <li><p>Fri:</p> <p>1100 - 2100</p></li>
+                    <li><p>Sat:</p> <p>1200 - 2000</p></li>
+                    <li><p>Sun:</p> <p>1200 - 2000</p></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <p>5555 Francis Ave., Burnaby, BC, Canada</p>
+                <hr>
+                <p>aunt_francis@gmail.com</p>
+                <hr>
+                <p>phone: (+1)123-456-7890</p>
+            </div>
+        </footer>
     </body>
 </html>

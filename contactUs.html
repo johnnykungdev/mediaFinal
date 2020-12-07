@@ -3,6 +3,7 @@
     <head>
         <title>Contact Us - Aunt Francis</title>
         <link href="./assets/css/contactUS.css" rel="stylesheet"/>
+        <link href="./assets/css/navBar.css" rel="stylesheet"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&family=Courgette&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
     </head>
@@ -10,27 +11,28 @@
         <nav>
             <div class="nav-content">
                 <a href="./index.html">
-                    <img id="logo" src="./assets/images/logo.png"/>
+                    <img id="logo" src="./assets/images/logo.png" alt="image of food."/>
                 </a>
             </div>
             <ul class="nav-content" id="nav-list">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./menu.html">MENU</a></li>
-                <li><a href="./contactUs.html">CONTACT</a></li>
+                <li><a href="./index.html" title="Go back home">HOME</a></li>
+                <li><a href="./about.html" title="Learn more about Aunt Francis">ABOUT</a></li>
+                <li><a href="./menu.html" title="Take a look at our delicious menu">MENU</a></li>
+                <li><a href="./contactUs.html" title="Contact and ask Aunt Francis">CONTACT</a></li>
             </ul>
-            <div class="orderButtonContainer">
-                <button class="nav-content" id="order-online">Order Online</button>
-            </div>
+            <button class="nav-content" id="order-online" title="Order delicious food here.">ORDER ONLINE</button>
         </nav>
         <header>
             <div id="blackdrop"></div>
             <div class="header-content">
                 <form>
-                    <h2>Contact Us</h2>
-                    <input class="contactInput" placeholder="Your Name"/>
-                    <input class="contactInput" placeholder="Your Email"/>
-                    <input class="contactInput" placeholder="Subject"/>
+                    <h2>Leave a Message</h2>
+                    <h3>Contact Information</h3>
+                    <div>
+                        <input class="contactInput" placeholder="Your Name"/>
+                        <input class="contactInput" placeholder="Your Email"/>
+                        <input class="contactInput" placeholder="Subject" id="subject"/>
+                    </div>
                     <textarea 
                         id="emailContent"
                         rows="5"
