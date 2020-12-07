@@ -4,8 +4,9 @@
         <title>Aunt Francis</title>
         <link href="./assets/css/index.css" rel="stylesheet"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&family=Courgette&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+        <script src="./app.js"></script>
+        <link rel="icon" type="image/png" href="./assets/images/favicon.png">
     </head>
     <body>
         <nav>
@@ -15,59 +16,34 @@
                 </a>
             </div>
             <ul class="nav-content" id="nav-list">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./menu.html">MENU</a></li>
-                <li><a href="./contactUs.html">CONTACT</a></li>
+                <li><a href="./index.html" title="Go back home.">HOME</a></li>
+                <li><a href="./about.html" title="Learn more about Aunt Francis.">ABOUT</a></li>
+                <li><a href="./menu.html" title="Take a look at our delicious menu.">MENU</a></li>
+                <li><a href="./contactUs.html" title="Contact and ask Aunt Francis.">CONTACT</a></li>
             </ul>
-            <div class="orderButtonContainer">
-                <button class="nav-content" id="order-online">Order Online</button>
-            </div>
+            <button class="nav-content" id="order-online" title="Order delicious food here.">ORDER ONLINE</button>
         </nav>
-        <header>
+        <header id="background">
             <div id="blackdrop"></div>
             <div class="header-content">
-                <h2 class="orangeText">Welcome to Aunt Francis</h2>
-                <h1 class="whiteText">Come Dine With Us</h1>
-                <hr class="whiteText">
-                <h4 class="whiteText">Opening Hours<br>
+                <h1 class="orangeText">Welcome to</h1>
+                <img id="logoSquare" src="./assets/images/logo2.png">
+                <h2 class="whiteText">Come Dine With Family.</h2>
+                <h4 class="whiteText">Dining Hours<br>
                     Weekdays: 1100 - 2100<br>
                     Weekends: 1200 - 2000<br>
                 </h4>
-                <div>
-                </div>
-                <button id="book-table">Book a Table</button>
+                <button id="book-table" title="Dine with us today.">Book a Table</button>
             </div>
         </header>
         <section class="aboutAuntFrancis">
             <div class="imageContainer">
-                <img id="auntFrancisImage" src="/assets/images/aunt.jpeg"/>
+                <img id="auntFrancisImage" src="./assets/images/aunt.jpeg"/>
             </div>
             <div class="auntFrancisQuote">
                 <p>"I only prepare food with the freshest ingredients and serve them with passion"</p>
                 <p>- Aunt Francis</p>
             </div>
-        </section>
-        <section class="happyCustomers">
-            <h2 class="happyCustomersH2">Happy Customers</h2>
-            <div class="happyCustomersContent">
-                "Visited as a guest in the Aunt Francis restaurant for lunch just today. We were entertaining friends from California, and enjoyed our ocean side table. We chose to stay indoors - to enjoy the air conditioning 😊. I just want to say that, in addition to a nice meal, we had a delightful waitress, Jackie. She had just the right balance of friendliness and efficiency. She recognized that we wanted time to visit and did not rush us. She and other staff members made certain that we had everything we needed. Kudos!"
-            </div>
-            <img src="./assets/images/happyCustomer.png" id="happyCustomerImage"/>
-            <div>
-                <div class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </div>
-            </div>
-        </section>
-        <section class="foods">
-            <img src="./assets/images/index/menu1.png" id="foodCircleImage">
-            <img src="./assets/images/index/menu6.png" id="foodCircleImage">
-            <img src="./assets/images/index/menu7.png" id="foodCircleImage">
         </section>
         <footer>
                 <div class="footerDescription">
