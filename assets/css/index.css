@@ -101,7 +101,7 @@ h2 {
 
 h3 {
     font-size: 2vw;
-    color: #311E10;
+    color:white;
 }
 
 h4 {
@@ -208,6 +208,10 @@ aside {
     padding: 2vh;
     text-align: center;
     background-color: white;
+}
+
+aside h3 {
+    color: #311E10;
 }
 
 .instagram {
