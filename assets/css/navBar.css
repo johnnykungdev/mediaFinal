@@ -20,6 +20,11 @@ a, a:link, a:visited {
     font-size: 1.3rem;
 }
 
+.nav-content li {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
 #nav-list {
     text-align: center;
 }
