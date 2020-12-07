@@ -32,8 +32,10 @@ header {
     position: relative;
     background-size: cover;
     width: 100%;
-    height: 66.6vw;
+    height: 100vh;
+    min-width: 700px;
     background-color: rgb(237, 242, 239);
+    top: 75px;
 }
 
 .header-content {
@@ -45,9 +47,9 @@ header {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     background-color: white;
-    height: 500px;
-    width: 400px;
+    width: 500px;
     border-radius: 20px;
+  
 }
 
 .contactInput {
