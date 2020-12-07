@@ -141,6 +141,12 @@ header {
 
 #menuItemImage {
     width: 100%;
+    transition: all 0.5s;
+}
+
+#menuItemImage:hover {
+    transform: scale(1.5);
+    transition: all 0.5s;
 }
 
 .menuItemText {
