@@ -1,4 +1,4 @@
-class cartItems {
+class CartItems {
     constructor() {
         
     }
@@ -28,4 +28,4 @@ class cartItems {
     }
 }
 
-export default cartItems
+export default CartItems
