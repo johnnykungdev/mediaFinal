@@ -28,3 +28,12 @@ h3 {
 h4 {
     font-size: 1.5vw;
 }
+
+.your-order {
+    margin: 0;
+}
+
+.table-container {
+    position: relative;
+    top: 75px;
+}
