@@ -5,3 +5,4 @@ const cartItems = new CartItems(stubData.cartItems)
 console.log(cartItems)
 
 cartItems.listItems(stubData.cartItems)
+cartItems.displayOrderTotal()

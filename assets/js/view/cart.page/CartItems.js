@@ -41,14 +41,28 @@ class CartItems {
                 }
                 newItemTr.appendChild(infoTd)
             }
+            const removeButton = document.createElement('div')
+            removeButton.innerHTML = '<u>remove</u>'
+            removeButton.classList.add('removeButton')
+            const removeButtonColumn = document.createElement('td')
+            removeButtonColumn.appendChild(removeButton)
+            newItemTr.appendChild(removeButtonColumn)
+
             itemsTable.appendChild(newItemTr)
         })
     }
-    addItem(itemsArray) {
-        
+    displayOrderTotal() {
+        const orderTotal = document.getElementById('orderTotal')
+        //number to be fixed
+        orderTotal.innerHTML = '1000'
     }
-    deleteItem(itemsArray) {
-        
+    addItem(newItem) {
+        this.itemsArray.push(newItem)
+    }
+    deleteItem(itemId) {
+        const deletedItemIndex = this.itemsArray.findIndex(item => item.id === itemId)
+        this.itemsArray.splice(deletedItemIndex, 1)
+        console.log(deletedItemIndex)
     }
 }
 
