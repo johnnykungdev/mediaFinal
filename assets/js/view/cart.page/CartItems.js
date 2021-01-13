@@ -1,17 +1,28 @@
 class CartItems {
-    constructor() {
-        
+    constructor(itemsArray) {
+        this.itemsArray = itemsArray
     }
-    static changeItemAmount(newAmount) {
+    changeItemAmount(itemId, newAmount) {
         //change the amount of selected item in the itemsArr
         console.log(newAmount)
+        console.log(this.itemsArray)
+        const changedItem = this.itemsArray.find(item => item.id === itemId)
+        console.log(changedItem)
+        changedItem.itemAmount = newAmount
+        changedItem.itemSubtotal = changedItem.itemPrice * changedItem.itemAmount
+        const newItemSubTotal = document.getElementById(`amountInput-${itemId}`)
+        console.log(newItemSubTotal)
+        newItemSubTotal.innerHTML = changedItem.itemSubtotal
     }
-    listItems(itemsArr) {
+    listItems() {
         const itemsTable = document.querySelector('.itemsTable')
-        console.log(itemsArr)
-        itemsArr.forEach(item => {
+        console.log(this)
+        const _this = this
+        this.itemsArray.forEach(item => {
             //{ item: '', itemPrice: '', itemAmount: '', itemSubprice: '' }
             const newItemTr = document.createElement('tr')
+
+            //**fix item object to class later**
             for (let infoType in item) {
                 const infoTd = document.createElement('td')
                 infoTd.classList.add(`${infoType}`)
@@ -19,19 +30,19 @@ class CartItems {
                     const amountInput = document.createElement('input')
                     amountInput.value = item[infoType]
                     amountInput.addEventListener('input', function(e) {
-                        return CartItems.changeItemAmount(e.target.value)   
+                        return _this.changeItemAmount(item.id, e.target.value)
                     })
                     infoTd.appendChild(amountInput)
-                } else {
+                } else if (infoType === 'itemSubtotal') {
+                    infoTd.innerHTML = item[infoType]
+                    infoTd.id = `amountInput-${item.id}`
+                } else if (infoType !== 'id') {
                     infoTd.innerHTML = item[infoType]
                 }
                 newItemTr.appendChild(infoTd)
             }
             itemsTable.appendChild(newItemTr)
         })
-    }
-    caculateItemSubtotal(amount, unitPrice) {
-        return amount * unitPrice
     }
     addItem(itemsArray) {
         
