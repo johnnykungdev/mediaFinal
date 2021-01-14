@@ -14,6 +14,8 @@ class CartItems {
     //item is a object containing: item, itemPrice, itemAmount, itemSubtotal
     buildItemTr(item) {
         const newItemTr = document.createElement('tr')
+        newItemTr.id = `item-${item.id}`
+        const _this = this
         for (let infoType in item) {
             const infoTd = document.createElement('td')
             infoTd.classList.add(`${infoType}`)
@@ -35,6 +37,9 @@ class CartItems {
         const removeButton = document.createElement('div')
         removeButton.innerHTML = '<u>remove</u>'
         removeButton.classList.add('removeButton')
+        removeButton.addEventListener('click', function() {
+            return _this.deleteItem(item.id)
+        })
         const removeButtonColumn = document.createElement('td')
         removeButtonColumn.appendChild(removeButton)
         newItemTr.appendChild(removeButtonColumn)
@@ -44,7 +49,6 @@ class CartItems {
     }
     listItems() {
         const itemsTable = document.querySelector('.itemsTable')
-        const _this = this
         this.itemsArray.forEach(item => {
             //{ item: '', itemPrice: '', itemAmount: '', itemSubprice: '' }
             this.buildItemTr(item)
@@ -60,8 +64,15 @@ class CartItems {
         return this.buildItemTr(newItem)
     }
     deleteItem(itemId) {
+        console.log(itemId)
         const deletedItemIndex = this.itemsArray.findIndex(item => item.id === itemId)
         this.itemsArray.splice(deletedItemIndex, 1)
+        console.log(this.itemsArray)
+        return this.deleteItemTr(itemId)
+    }
+    deleteItemTr(itemId) {
+        const deletedItemTr = document.getElementById(`item-${itemId}`)
+        deletedItemTr.remove()
     }
 }
 
