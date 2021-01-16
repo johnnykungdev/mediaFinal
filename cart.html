@@ -20,6 +20,28 @@
             <button class="nav-content" id="order-online" title="Order delicious food here.">ORDER ONLINE</button>
         </nav>
         <div class="table-container">
+            <h2 class="your-order">Your Order</h2>
+            <table class="itemsTable">
+                <thead>
+                    <tr>
+                        <th>item</th>
+                        <th>price</th>
+                        <th>amount</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody class="items-table-body">
+                </tbody>
+            </table>
+            <div>
+                <h3>total:$<span id="orderTotal"></span></h3>
+            </div>
+            <div>
+                <button class="add-item-btn">add item</button>
+                <button>order</button>
+                <button>cancel</button>
+            </div>
         </div>
+        <script src="./assets/js/view/cart.page/cart.page.js" type="module"></script>
     </body>
 </html>
